@@ -100,3 +100,11 @@ size_t RingBuffer::removeTrailing(size_t len) {
     tail = (tail - actuallyRemoved + size) % size;
     return actuallyRemoved;
 }
+
+size_t RingBuffer::clear() {
+    size_t actuallyRemoved = getLength();
+
+    head = 0;
+    tail = 0;
+    return actuallyRemoved;
+}

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['operator_5b_5d_18',['operator[]',['../classRingBuffer.html#a201b1e893122b67b29bc47b47b75ca88',1,'RingBuffer']]]
+  ['getcapacity_17',['getCapacity',['../classRingBuffer.html#a7c029b74969e886ee24f71a536cd46d5',1,'RingBuffer']]],
+  ['getfreespace_18',['getFreeSpace',['../classRingBuffer.html#ae2715db60edf92f147ddf1a3f4b741fe',1,'RingBuffer']]],
+  ['getlength_19',['getLength',['../classRingBuffer.html#a15d6752c39e49899c25b8029a0c7a870',1,'RingBuffer']]]
 ];

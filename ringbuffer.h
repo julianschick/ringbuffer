@@ -117,6 +117,12 @@ public:
      */
     size_t removeTrailing(size_t len);
 
+    /**
+     * Clear buffer
+     * @return  Number of removed bytes.
+     */
+    size_t clear();
+
 private:
     uint8_t* buf;
     size_t size;

@@ -101,19 +101,21 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classRingBuffer.html#ad3ce743e6a6f9b695bfb3e53462d9870">removeTrailing</a>(<span class="keywordtype">size_t</span> len);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    uint8_t* buf;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">size_t</span> size;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">size_t</span> head = 0;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">size_t</span> tail = 0;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    void (*outOfBoundsHandler) (<span class="keywordtype">size_t</span> index, <span class="keywordtype">size_t</span> maxIndex);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif //RINGBUFFER_H</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classRingBuffer.html#ab24f75db40322df995ab6d49fe3d2f0a">clear</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    uint8_t* buf;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">size_t</span> size;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">size_t</span> head = 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">size_t</span> tail = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    void (*outOfBoundsHandler) (<span class="keywordtype">size_t</span> index, <span class="keywordtype">size_t</span> maxIndex);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif //RINGBUFFER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassRingBuffer_html"><div class="ttname"><a href="classRingBuffer.html">RingBuffer</a></div><div class="ttdoc">Efficient circular buffer.</div><div class="ttdef"><b>Definition:</b> ringbuffer.h:16</div></div>
 <div class="ttc" id="aclassRingBuffer_html_ad3ce743e6a6f9b695bfb3e53462d9870"><div class="ttname"><a href="classRingBuffer.html#ad3ce743e6a6f9b695bfb3e53462d9870">RingBuffer::removeTrailing</a></div><div class="ttdeci">size_t removeTrailing(size_t len)</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:97</div></div>
@@ -121,6 +123,7 @@ $(function() {
 <div class="ttc" id="aclassRingBuffer_html_a3da7367bed7c02ebafac1803ed83e892"><div class="ttname"><a href="classRingBuffer.html#a3da7367bed7c02ebafac1803ed83e892">RingBuffer::append</a></div><div class="ttdeci">bool append(uint8_t *data, size_t len)</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:56</div></div>
 <div class="ttc" id="aclassRingBuffer_html_a6c79bfa9dc56c190c8eba2494daef86d"><div class="ttname"><a href="classRingBuffer.html#a6c79bfa9dc56c190c8eba2494daef86d">RingBuffer::removeLeading</a></div><div class="ttdeci">size_t removeLeading(size_t len)</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:90</div></div>
 <div class="ttc" id="aclassRingBuffer_html_a201b1e893122b67b29bc47b47b75ca88"><div class="ttname"><a href="classRingBuffer.html#a201b1e893122b67b29bc47b47b75ca88">RingBuffer::operator[]</a></div><div class="ttdeci">uint8_t operator[](size_t index)</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:39</div></div>
+<div class="ttc" id="aclassRingBuffer_html_ab24f75db40322df995ab6d49fe3d2f0a"><div class="ttname"><a href="classRingBuffer.html#ab24f75db40322df995ab6d49fe3d2f0a">RingBuffer::clear</a></div><div class="ttdeci">size_t clear()</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:104</div></div>
 <div class="ttc" id="aclassRingBuffer_html_a15d6752c39e49899c25b8029a0c7a870"><div class="ttname"><a href="classRingBuffer.html#a15d6752c39e49899c25b8029a0c7a870">RingBuffer::getLength</a></div><div class="ttdeci">size_t getLength()</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:16</div></div>
 <div class="ttc" id="aclassRingBuffer_html_a7c029b74969e886ee24f71a536cd46d5"><div class="ttname"><a href="classRingBuffer.html#a7c029b74969e886ee24f71a536cd46d5">RingBuffer::getCapacity</a></div><div class="ttdeci">size_t getCapacity()</div><div class="ttdef"><b>Definition:</b> ringbuffer.h:42</div></div>
 <div class="ttc" id="aclassRingBuffer_html_af3c4f9bcd98c1be55cb7fdcd7c86c227"><div class="ttname"><a href="classRingBuffer.html#af3c4f9bcd98c1be55cb7fdcd7c86c227">RingBuffer::RingBuffer</a></div><div class="ttdeci">RingBuffer(size_t capacity, void(*outOfBoundsHandler)(size_t, size_t)=nullptr)</div><div class="ttdef"><b>Definition:</b> ringbuffer.cpp:5</div></div>
