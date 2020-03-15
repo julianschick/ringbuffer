@@ -1,4 +1,4 @@
-# ringbuffer
+# RingBuffer
 Circular ring buffer for handling data input streams on microcontrollers.
 
-See [doxygen documentation](doc/html/index.html).
+Check out the documentation by cloning the repo and opening `doc/html/index.html` in the project directory.
