@@ -39,13 +39,13 @@ public:
      * @see getLength()
      * @see getFreeSpace()
      */
-    size_t getCapacity() { return size - 1; };
+    inline size_t getCapacity() { return size - 1; };
 
     /**
      * @return Length of the buffer. That is, current amount of data in the buffer.
      * @see getCapacity()
      */
-    inline size_t getLength();
+    size_t getLength();
 
     /**
      * @return Currently available free bytes in the buffer.

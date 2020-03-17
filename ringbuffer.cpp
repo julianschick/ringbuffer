@@ -13,7 +13,7 @@ RingBuffer::~RingBuffer() {
     delete[] buf;
 }
 
-inline size_t RingBuffer::getLength() {
+size_t RingBuffer::getLength() {
     if (head <= tail) {
         return tail - head;
     } else {
