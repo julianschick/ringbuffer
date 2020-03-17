@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
-project(RingBuffer)
-
-set(CMAKE_CXX_STANDARD 14)
-
-add_library(ringbuffer ringbuffer.cpp ringbuffer.h)
+idf_component_register(
+	SRCS "ringbuffer.cpp" 
+    INCLUDE_DIRS "."
+)
